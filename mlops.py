@@ -62,8 +62,8 @@ print(model.summary())
 
 from keras.preprocessing.image import ImageDataGenerator
 
-train_data_dir = '/root/ima/train/'
-validation_data_dir = '/root/ima/test/'
+train_data_dir = '/ima/train/'
+validation_data_dir = '/ima/test/'
 
 # Let's use some data augmentaiton 
 train_datagen = ImageDataGenerator( rescale=1./255, rotation_range=45, width_shift_range=0.3, height_shift_range=0.3, horizontal_flip=True, fill_mode='nearest')
