@@ -110,6 +110,6 @@ print(final_accuracy)
 
 import os
 if final_accuracy < 0.92:
-    os.system("curl --user "admin:Omkar@jio.com1" http://192.168.43.60:8080/job/merge/build?token=retrain")
+    os.system("curl --user 'admin:Omkar@jio.com1' http://192.168.43.60:8080/job/merge/build?token=retrain")
 else:
     print("Your New accuracy=",final_accuracy)
