@@ -100,7 +100,7 @@ nb_train_samples = 20
 nb_validation_samples = 4
 
 # We only train 5 EPOCHS 
-epochs = 2
+epochs = 1
 batch_size = 16
 
 history = model.fit_generator(train_generator,steps_per_epoch = nb_train_samples // batch_size,epochs = epochs,callbacks = callbacks,validation_data= validation_generator,validation_steps = nb_validation_samples // batch_size)
